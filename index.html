@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+</head>
+<body>
+
+    <div class="heading">
+        <div class="cargoflash"><h1><ins style="color: #378d73; margin-left: 14px;">cargo</ins>Flash<sub style="font-size: small; color:#378d73;">creating value</sub></h1>
+        </div>
+        <a href="error.html"><button type="button" id="close" style="margin-top: 14px;">X</button></a>
+    </div>
+
+    <div style="display: flex;">
+    <div class="heading2"><h2 style="margin-left: 10px; margin-top: 140px;"><ins>Lead</ins> Information</h2></div>
+    <div class="DnL" >
+        <button type="button" style="margin-top: 140px; position: fixed; z-index: 1;" id="theme">Dark</button><br>
+    </div>
+    </div>
+        <div class="FormCont">
+        <div class="Form">
+        <form>
+            <div class="row1">
+            <div class="field">
+            <label class="label" >Source: *</label><br>
+            <select name="dropdown" class="input" id="source">
+                <option value="Facebook/Insta">Facebook/Insta</option>
+                <option value="Google">Google</option>
+                <option value="Youtube Ads">Youtube Ads</option>
+                <option value="LinkedIn">LinkedIn</option>
+            </select>
+            </div>
+
+            <div class="field">
+                <label class="label" >Industry / Department:</label><br>
+                <select name="dropdown" class="input" id="industry">
+                    <option value="Production">Production</option>
+                    <option value="Development">Development</option>
+                    <option value="Deployment">Deployment</option>
+                    <option value="Marketing">Marketing</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label class="label" >Date: *</label><br>
+                <input type="date" id="date" name="Date">            
+            </div>
+
+            <div class="field">
+                <label class="label" >Address:</label><br>
+                <input type="text" maxlength="15" placeholder="Address" id="address" > 
+            </div>
+          </div><br>
+
+          <div class="row2">
+            <div class="field">
+            <label class="label">Email: *</label><br>
+            <input type="text" maxlength="15" placeholder="Email" id="email"> 
+            </div>
+
+            <div class="field">
+                <label class="label" id="Country">Country:</label><br>
+                <select name="dropdown" class="input" id="country">
+                    <option value="India">India</option>
+                    <option value="UK">UK</option>
+                    <option value="USA">USA</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label class="label">Company Name: *</label><br>
+                <input type="text" maxlength="15" placeholder="Company" id="company"> 
+            </div>
+
+            <div class="field">
+                <label class="label">Budget:</label><br>
+                <input type="text" maxlength="15" placeholder="Budget" id="budget"> 
+            </div>
+          </div><br>
+
+          <div class="row2">
+            <div class="field" id="lastrow">
+                <label class="label">Pincode: *</label><br>
+                <input type="text" maxlength="15" placeholder="Pincode" id="pin"> 
+            </div>
+            <div class="field">
+            <label class="label" id="State" style="margin-left: 1px;">City:</label><br>
+            <select name="dropdown" class="input" id="state">
+                <option value="First">Delhi</option>
+                <option value="Second">Bangalore</option>
+                <option value="Third">Pune</option>
+                <option value="Fourth">Hyderabad</option>
+                <option value="First">PAN India</option>
+            </select>
+            </div>
+
+            <div class="field">
+                <label class="label">Stock Price:</label><br>
+                <select name="dropdown" class="input" id="stock">
+                    <option value="0-100">0-100</option>
+                    <option value="100-500">100-500</option>
+                    <option value="500-2000">500-2000</option>
+                    <option value="Above 2000">Above 2000</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label class="label">Company type: *</label><br>
+                <input type="radio" value="IATA" class="check" name="only1" id="companyType">
+                <label for="IATA">IATA</label>&nbsp;
+                <input type="radio" value="Non-IATA" class="check" name="only1" id="companyType">
+                <label for="Non-IATA">Non-IATA</label>
+            </div>
+            
+          </div>
+          <button type="button" id="btn" class="submitBtn">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+    <div class="table">
+        <div class="heading3"><h2 style="margin-left: 10px;"><ins>Customer</ins> Information</h2></div>
+    </div>
+
+    <div class="tableCard">
+        <div class="table-wrapper">
+            <table class="fl-table">
+                <thead>
+                <tr>
+                    <th>SOURCE</th>
+                    <th>INDUSTRY DEPARTMENT</th>
+                    <th>EMAIL</th>
+                    <th>DATE</th>
+                    <th>ADDRESS</th>
+                </tr>
+                </thead>
+
+                <button type="button" class="addBtn" onclick="AlertMessage()">+ Add</button>
+
+                <tbody id="tbody">
+                
+                <tbody>
+                </table>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="fl-table">
+                    <thead>
+                    <tr>
+                        <th>COUNTRY</th>
+                        <th>COMPANY</th>
+                        <th>BUDGET</th>
+                        <th>STOCK PRICE</th>
+                        <th>TYPE</th>
+                    </tr>
+                    </thead>
+
+                    <button type="button" onclick="AlertMessage()" class="addBtn">+ Add</button>
+
+                    <tbody id="tbody2">
+                    
+                    <tbody>
+                    </table>
+                </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
